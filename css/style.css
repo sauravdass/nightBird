@@ -448,6 +448,7 @@ h2{
     height: 30px;
     background: url(../images/dot.png) no-repeat center / cover;
     border: none;
+    outline: none;
     cursor: pointer;
 }
 
