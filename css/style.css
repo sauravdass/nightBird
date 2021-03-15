@@ -105,7 +105,6 @@ h2{
     width: 380px;
     margin: 0 auto;
 }
-
 /*common css ends*/
 
 /*animation css starts*/
@@ -781,6 +780,21 @@ h2{
     text-align: center;
 }
 
+.event-bg .event .slider-items .text-part ul li.animate{
+    animation: bg-white linear 1s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes bg-white{
+    0%{
+        background: #fff;
+    }
+    100%{
+        background: var(--maincolor);
+    }
+}
+
 .event-bg .event .slider-items .text-part ul li .time{
     font-size: 16px;
     font-family: digital;
@@ -791,6 +805,21 @@ h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.event-bg .event .slider-items .text-part ul li.animate .time{
+    animation: text-pink linear 1s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes text-pink{
+    0%{
+        color: var(--maincolor);
+    }
+    100%{
+        color: #fff;
+    }
 }
 /*event css ends*/
 
@@ -985,10 +1014,6 @@ h2{
 .plan-bg{
     padding: 80px 0;
     background: #111111;
-}
-
-.plan-bg .plan{
-    
 }
 
 .plan-bg .plan .plan-items{
@@ -1274,6 +1299,18 @@ h2{
 
 .contact-bg .footer p a{
     color: var(--maincolor);
+    animation: colorAnimate linear 0.5s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes colorAnimate{
+    0%{
+        color: var(--maincolor);
+    }
+    100%{
+        color: #fff;
+    }
 }
 
 .contact-bg .footer p a:hover{

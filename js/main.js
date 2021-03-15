@@ -5,7 +5,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
-        infinit: true,
+        infinite: true,
         slidesToShow: 1,
         pauseOnFocus: false,
         dots: true,
@@ -28,7 +28,8 @@ $(document).ready(function(){
     //event slider
     $('.event-slider').slick({
         autoplay: true,
-        infinit: true,
+        autoplaySpeed: 5000,
+        infinite: true,
         slidesToShow: 1,
         arrows: true,
         prevArrow: '<i class="fa fa-chevron-left slick-prev"></i>',
@@ -51,7 +52,7 @@ $(document).ready(function(){
     
     //testimonial slider
     $('.testimonial').slick({
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,
         slidesToShow: 2,
@@ -129,6 +130,8 @@ $(document).ready(function(){
     });
     //countdown js code ends here
     
+    //wow js
+    new WOW().init();
     
     
     //custom jQuery code starts here for functionalities
