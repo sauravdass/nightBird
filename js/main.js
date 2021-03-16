@@ -193,5 +193,65 @@ $(document).ready(function(){
         $(this).siblings().addClass('active-img');
     });
     
-    
 });
+//custom jquery code ends here
+
+
+
+//JavaScript code starts here for form validation
+//variable declaration
+let firstName = document.getElementById('firstName');
+let email = document.getElementById('email');
+let sendBtn = document.getElementById('sendBtn');
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+//main validation
+function validation(){
+    //First Name
+    if(firstName.value == ""){
+        firstName.style.border = "1px solid red";
+        fnameErr.innerHTML = "please enter your name";
+        firstName.focus();
+        return false;
+    }
+    //email
+    if(email.value == ""){
+        email.style.border = "1px solid red";
+        emailErr.innerHTML = "please enter your email";
+        email.focus();
+        return false;
+    }
+    //email validation with regular expression
+    if(email.value.match(pattern)){
+        
+    }
+    else{
+        email.style.border = "1px solid red";
+        emailErr.innerHTML = "please enter valid email";
+        email.focus();
+        return false;
+    }
+}
+
+function errValid(){
+    //First Name
+    if(firstName.value != ""){
+        firstName.style.borderColor = "#fff";
+        fnameErr.innerHTML = "";
+    }
+    //email
+    if(email.value != ""){
+        email.style.borderColor = "#fff";
+        emailErr.innerHTML = "";
+    }
+}
+
+firstName.onblur = errValid;
+email.onblur = errValid;
+
+
+
+
+
+
+

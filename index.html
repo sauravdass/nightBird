@@ -727,16 +727,16 @@
                 <div class="contact-header">
                     <h3>sign up for newsletter</h3>
                 </div>
-                <form action="">
+                <form id="form" action="#">
                     <div class="form-group">
-                        <input type="text" placeholder="your name">
-                        <span></span>
+                        <input id="firstName" type="text" placeholder="your name">
+                        <span id="fnameErr"></span>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="your e-mail">
-                        <span></span>
+                        <input id="email" type="email" placeholder="your e-mail">
+                        <span id="emailErr"></span>
                     </div>
-                    <button type="submit" class="common-a">submit</button>
+                    <button id="sendBtn" type="submit" class="common-a" onclick="return validation()">submit</button>
                 </form>
                 <div class="contact-header social-heading">
                     <h3>get social</h3>
