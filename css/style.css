@@ -1246,7 +1246,6 @@ h2{
     color: #fff;
     background: transparent;
     font-weight: 400;
-    text-transform: capitalize;
     padding: 12px 10px;
     border: 1px solid #fff;
     box-sizing: border-box;
@@ -1258,6 +1257,7 @@ h2{
     color: red;
     font-weight: 400;
     text-transform: capitalize;
+    font-size: 13px;
     font-style: italic;
 }
 
